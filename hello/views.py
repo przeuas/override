@@ -9,8 +9,8 @@ from django.shortcuts import render, get_object_or_404
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
-    #posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    return render(request,'index.html')#, {'posts': posts})
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    return render(request,'index.html', {'posts': posts})
 
 
 def post_new(request):
