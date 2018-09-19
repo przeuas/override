@@ -124,4 +124,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
+<<<<<<< HEAD
+=======
+
+>>>>>>> test
 SITE_ID=1
