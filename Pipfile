@@ -5,11 +5,13 @@ verify_ssl = true
 
 
 [packages]
-
+dj-database-url = "*"
 django = "*"
 gunicorn = "*"
 django-heroku = "*"
-
+psycopg2 = "*"
+whitenoise = "*"
+requests = "*"
 
 [requires]
 
