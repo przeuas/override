@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-#import django_heroku
+import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -27,7 +27,7 @@ SECRET_KEY = 'CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be us
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.override.pl']
+ALLOWED_HOSTS = ['.override.pl','127.0.0.1']
 
 
 # Application definition
@@ -123,4 +123,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
